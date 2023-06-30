@@ -1,7 +1,7 @@
 const { WebSocketServer } = require("ws");
 const server = require("http").createServer()
 
-const ws = new WebSocketServer({ port: 4100, path: "/ws", host: "192.168.128.9" })
+const ws = new WebSocketServer({ port: 4100, path: "/ws" })
 
 ws.on("connection", (socket) => {
     socket.on("message", (payload) => {
